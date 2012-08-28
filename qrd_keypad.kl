@@ -1,0 +1,16 @@
+key 116   POWER             WAKE
+key 231   CALL              
+key 103   DPAD_UP           
+key 108   DPAD_DOWN         
+key 105   DPAD_LEFT         
+key 106   DPAD_RIGHT        
+key 232   DPAD_CENTER       
+key 107   ENDCALL			WAKE_DROPPED           
+key 232   MENU
+key 102   HOME              
+key 217   SEARCH            
+key 158   BACK
+key 115   VOLUME_UP         WAKE
+key 114   VOLUME_DOWN       WAKE
+key 211   FOCUS
+key 212   CAMERA

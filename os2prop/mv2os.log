@@ -1,0 +1,13 @@
+###  ###
+vendor/qcom/qrd-proprietary/frameworks/base/services/
+vendor/qcom/qrd-proprietary/frameworks/base/telephony/
+vendor/qcom/qrd-proprietary/frameworks/policies/base/
+vendor/qcom/qrd-proprietary/hardware/ril/
+vendor/qcom/qrd-proprietary/packages/apps/Contacts/
+vendor/qcom/qrd-proprietary/packages/apps/Fmplayer/
+vendor/qcom/qrd-proprietary/packages/apps/Mms/
+vendor/qcom/qrd-proprietary/packages/apps/Phone/
+vendor/qcom/qrd-proprietary/packages/apps/Settings/
+vendor/qcom/qrd-proprietary/packages/apps/Stk/
+vendor/qcom/qrd-proprietary/packages/providers/ContactsProvider/
+vendor/qcom/qrd-proprietary/packages/providers/TelephonyProvider/
