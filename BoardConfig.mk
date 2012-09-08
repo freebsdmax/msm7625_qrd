@@ -27,23 +27,23 @@
 # Product-specific compile-time definitions.
 #
 
-ifeq ($(QC_PROP),true)
+#ifeq ($(QC_PROP),true)
     BOARD_USES_QCOM_HARDWARE := true
     BOARD_USE_QCOM_TESTONLY := true
 
-    ifneq ($(BUILD_TINY_ANDROID), true)
+#ifneq ($(BUILD_TINY_ANDROID), true)
     BOARD_GPS_LIBRARIES := libloc
     BOARD_CAMERA_LIBRARIES := libcamera
     BOARD_HAVE_BLUETOOTH := true
     #  [WIFI] If enable Wi-Fi Support. Set "BOARD_HAVE_WIFI := true"
     BOARD_HAVE_WIFI := true
-    endif   # !BUILD_TINY_ANDROID
+#endif   # !BUILD_TINY_ANDROID
 
-else
+#else
     BOARD_USES_GENERIC_AUDIO := true
     USE_CAMERA_STUB := true
 
-endif # QC_PROP
+#endif # QC_PROP
 
 TARGET_HAVE_TSLIB := true
 
@@ -56,6 +56,8 @@ TARGET_BOARD_PLATFORM := msm7k
 TARGET_BOOTLOADER_BOARD_NAME := MSM7625_QRD
 QCOM_TARGET_PRODUCT := msm7625_qrd
 #TARGET_USES_2G_VM_SPLIT := true
+
+LOCAL_MODULE_TAGS := optional
 
 BOARD_KERNEL_BASE    := 0x00200000
 BOARD_NAND_PAGE_SIZE := 2048
@@ -83,4 +85,5 @@ ifeq ($(BOARD_HAVE_WIFI),true)
     BOARD_WLAN_ATHEROS_SDK := system/wlan/atheros/AR6kSDK.2.2.1.151
     WPA_SUPPLICANT_VERSION := VER_0_6_X
     BOARD_WPA_SUPPLICANT_DRIVER := AR6000
+
 endif # BOARD_HAVE_WIFI
